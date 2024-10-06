@@ -226,7 +226,7 @@
 
     <!-- Start Footer Area -->
     <footer class="footer">
-        <div>© 2023 🍅番茄の翼🪶 - All Rights Reserved.</div>
+        <div>© <span id="copyright-year"></span> 🍅番茄の翼🪶 - All Rights Reserved.</div>
     </footer>
     <!--/ End Footer Area -->
 
@@ -254,6 +254,13 @@
         });
         cu.start();
     </script>
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        // Set the text content of the span element with id "copyright-year"
+        document.getElementById('copyright-year').textContent = currentYear;
+    </script>
+
 </body>
 
 </html>
